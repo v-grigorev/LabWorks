@@ -16,16 +16,18 @@ int main(void) {
 	LinkedList::iterator it;
 
 	it = list.begin();
-	while (it != nullptr) {
+	while (it != list.end()) {
 		cout << *it << endl;
 		it++;
 	}
+	cout << *it << endl;
 
 	it = list.end();
-	while (true) {
+	while (it != list.begin()) {
 		cout << *it << endl;
 		it--;
 	}
+	cout << *it << endl;
 
 	cout << endl;
 
